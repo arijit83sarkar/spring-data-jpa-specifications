@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: spring-data-jpa-specifications
+  datasource:
+    url: jdbc:mysql://172.17.0.2:3306/spring-data-jpa-specifications?useSSL=false
+    username: root
+    password: admin@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+      format-sql: true
+
+server:
+  port: 8090
+
+logging:
+  level:
+    com.raven.spring_data_jpa_specifications: DEBUG
+  file:
+    name: logs/application.log
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] [%-5level] [%logger{36}] - %msg%n"
+
