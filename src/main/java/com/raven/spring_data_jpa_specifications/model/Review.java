@@ -6,6 +6,7 @@ import lombok.*;
 import java.io.Serializable;
 
 @Entity
+@Builder
 @Getter
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
