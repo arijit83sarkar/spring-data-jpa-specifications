@@ -2,7 +2,7 @@ spring:
   application:
     name: spring-data-jpa-specifications
   datasource:
-    url: jdbc:mysql://172.17.0.2:3306/spring-data-jpa-specifications?useSSL=false
+    url: jdbc:mysql://172.17.0.2:3306/spring-data-jpa-specifications?useSSL=false&allowPublicKeyRetrieval=true
     username: root
     password: admin@123
     driver-class-name: com.mysql.cj.jdbc.Driver

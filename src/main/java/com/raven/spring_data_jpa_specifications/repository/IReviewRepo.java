@@ -1,6 +1,6 @@
 package com.raven.spring_data_jpa_specifications.repository;
 
-import com.raven.spring_data_jpa_specifications.model.Review;
+import com.raven.spring_data_jpa_specifications.model.entity.Review;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

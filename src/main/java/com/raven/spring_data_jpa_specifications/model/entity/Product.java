@@ -1,11 +1,10 @@
-package com.raven.spring_data_jpa_specifications.model;
+package com.raven.spring_data_jpa_specifications.model.entity;
 
 import jakarta.persistence.*;
-import lombok.*;
-import org.hibernate.Length;
 
 import java.io.Serializable;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -26,7 +25,7 @@ public class Product implements Serializable {
     private String manufacturer;
 
     @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<Review> reviews = new HashSet<>();
+    private List<Review> reviews;
 
     public Product() {
     }
@@ -87,11 +86,11 @@ public class Product implements Serializable {
         this.manufacturer = manufacturer;
     }
 
-    public Set<Review> getReviews() {
+    public List<Review> getReviews() {
         return reviews;
     }
 
-    public void setReviews(Set<Review> reviews) {
+    public void setReviews(List<Review> reviews) {
         this.reviews = reviews;
     }
 

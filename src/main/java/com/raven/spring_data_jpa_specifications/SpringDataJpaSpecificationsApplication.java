@@ -10,4 +10,6 @@ public class SpringDataJpaSpecificationsApplication {
 		SpringApplication.run(SpringDataJpaSpecificationsApplication.class, args);
 	}
 
+	// Swagger URL: http://localhost:8090/swagger-ui/index.html
+
 }

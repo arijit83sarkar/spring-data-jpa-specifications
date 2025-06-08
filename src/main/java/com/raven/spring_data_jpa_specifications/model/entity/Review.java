@@ -1,7 +1,6 @@
-package com.raven.spring_data_jpa_specifications.model;
+package com.raven.spring_data_jpa_specifications.model.entity;
 
 import jakarta.persistence.*;
-import lombok.*;
 
 import java.io.Serializable;
 
